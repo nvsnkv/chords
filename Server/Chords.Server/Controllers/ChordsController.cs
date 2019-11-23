@@ -26,7 +26,6 @@ namespace Chords.Server.Controllers
         }
 
         [HttpGet]
-        [Authorize]
         [Route("{id}")]
         public IChord GetChord(string id)
         {
