@@ -36,8 +36,9 @@ namespace Chords.Server
                 o.ClientSecret = Configuration["Authentication:Google:ClientSecret"];
                 o.Authority = "https://accounts.google.com";
                 o.ResponseType = OpenIdConnectResponseType.CodeIdToken;
-                o.CallbackPath = "/signin/google"; // Or register the default "/sigin-oidc"
+                o.CallbackPath = "/signin/google";
                 o.Scope.Add("email");
+                o.Scope.Add("phone");
                 o.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
             });
         }
