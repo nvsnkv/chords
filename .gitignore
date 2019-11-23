@@ -1,3 +1,3 @@
 /.vs
-/chords.server/obj
-/chords.server/bin
+obj
+bin
