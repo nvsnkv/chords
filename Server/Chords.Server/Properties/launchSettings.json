@@ -12,7 +12,7 @@
     "IIS Express": {
       "commandName": "IISExpress",
       "launchBrowser": true,
-      "launchUrl": "api/chords",
+      "launchUrl": "auth/login?redirect=https%3A%2F%2Flocalhost%3A44346%2Fapi%2Fchords",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

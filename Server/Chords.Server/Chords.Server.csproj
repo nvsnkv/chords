@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="3.0.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Chords.Domain.Contract\Chords.Domain.Contract.csproj" />
+    <ProjectReference Include="..\Chords.Registry.Fake\Chords.Registry.Fake.csproj" />
   </ItemGroup>
 
 </Project>

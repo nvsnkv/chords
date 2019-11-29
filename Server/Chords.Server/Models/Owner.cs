@@ -26,7 +26,7 @@ namespace Chords.Server.Models
         {
             if (principal == null) throw new ArgumentNullException(nameof(principal));
 
-            var id = principal.FindFirst("sub") ?? throw new ArgumentNullException($"principal.FindFirst(\"sub\")");
+            var id = principal.FindFirst("http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier") ?? throw new ArgumentNullException($"principal.FindFirst(\"nameidentifier\")");
             var email = principal.FindFirst("email")?.Value;
             var phone = principal.FindFirst("phone")?.Value;
 
