@@ -1,0 +1,12 @@
+{
+  "/**": {
+    "target": {
+        "host": "localhost",
+        "protocol": "http:",
+        "port": 2732
+      },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "info"
+  }
+}

@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -40,6 +41,11 @@ namespace Chords.Server
                 {
                     o.TicketDataFormat = new JwtTicketDataFormat(Configuration);
                     o.SlidingExpiration = true;
+                    o.Cookie = new CookieBuilder
+                    {
+                        Name = "jwt",
+                        HttpOnly = false
+                    };
                 })
                 .AddJwtBearer(o =>
                 {

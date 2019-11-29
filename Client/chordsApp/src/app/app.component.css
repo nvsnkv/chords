@@ -5,3 +5,6 @@ wired-card {
   padding: 20px;
   display: block;
 }
+wired-button {
+  background: lightskyblue
+}
