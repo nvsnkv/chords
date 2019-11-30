@@ -2,8 +2,8 @@
   "/**": {
     "target": {
         "host": "localhost",
-        "protocol": "http:",
-        "port": 2732
+        "protocol": "https:",
+        "port": 5001
       },
     "secure": false,
     "changeOrigin": true,
