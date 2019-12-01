@@ -1,8 +1,2 @@
-<wired-card elevation="3">
-  <h4>Chords: Anonymous communication channels</h4>
-  <p>This service allows you to configure a link that other users will use to send you a message using predefined list of contacts. The contacts would not be shared with requestor</p>
-</wired-card>
-<wired-card elevation="2" *ngIf="!User.isLoggedIn">
-  <p>There is nothing to do if you're not logged it</p>
-  <wired-button (click)="Login()">Log in</wired-button>
-</wired-card>
+<app-top-nav></app-top-nav>
+<router-outlet></router-outlet>

@@ -1,0 +1,10 @@
+.half {
+    width:46%;
+    float: left;
+    margin:1%;
+}
+
+.important {
+    font-size: larger;
+    margin-top: 5px;
+}

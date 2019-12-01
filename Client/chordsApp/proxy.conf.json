@@ -1,5 +1,25 @@
 {
-  "/**": {
+  "/api": {
+    "target": {
+        "host": "localhost",
+        "protocol": "https:",
+        "port": 5001
+      },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "info"
+  },
+  "/auth": {
+    "target": {
+        "host": "localhost",
+        "protocol": "https:",
+        "port": 5001
+      },
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "info"
+  },
+  "/signin": {
     "target": {
         "host": "localhost",
         "protocol": "https:",

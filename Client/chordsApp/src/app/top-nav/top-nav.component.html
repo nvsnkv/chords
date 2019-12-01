@@ -1,0 +1,20 @@
+<wired-card elevation="4" fill="blue" class="logo menu-item">
+    <a><h2>Chords</h2></a>
+</wired-card>
+
+<wired-link href="about" class="menu-item">
+    <h2>About</h2>
+</wired-link>
+<wired-link class="menu-item" *ngIf="user.isLoggedIn">
+    <h2>Chords</h2>
+</wired-link>
+<wired-link class="menu-item">
+    <h2>Statistics</h2>
+</wired-link>
+<div class="menu-item right" *ngIf="user.isLoggedIn">
+    <p>Howdy, {{user.name}}</p>
+</div>
+<wired-card elevation="3" *ngIf="!user.isLoggedIn" class="menu-item right">
+    <a (click)="login()"><h2>Login</h2></a>
+</wired-card>
+<wired-divider></wired-divider>

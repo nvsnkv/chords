@@ -7,6 +7,7 @@ import * as jwt_webcode from 'jwt-decode';
 export interface IUser {
   isLoggedIn: boolean;
   userId?: string;
+  name?: string;
 }
 
 @Injectable({
@@ -29,7 +30,8 @@ export class UserService {
 
     this.user = {
       isLoggedIn: token != null,
-      userId: token != null ? token['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'] : undefined
+      userId: token != null ? token['http://schemas.xmlsoap.org/ws/2005/05/identity/claims/nameidentifier'] : undefined,
+      name: token != null ? token['name'] : undefined
     };
   }
 

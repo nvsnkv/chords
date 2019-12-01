@@ -1,0 +1,19 @@
+.logo h2 {
+    margin: 0px auto;
+    color: white;
+}
+
+.logo.menu-item {
+  margin-left: 0;
+}
+
+.menu-item {
+    margin: 0px 20px 5px;
+}
+.menu-item h2 {
+    margin: 0px auto;
+}
+
+.right {
+    float:right;
+}
